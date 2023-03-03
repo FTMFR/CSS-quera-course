@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body dir="rtl">
+    <form action="/localhost:8080/vote" method="post">
+      <label for="name">نام</label><br />
+      <input name="name" type="text" id="name" value="name" required />
+      <br />
+      <!-- Add input for name here -->
+      <label for="email">ایمیل</label><br />
+      <!-- Add input for email here -->
+      <input name="email" type="email" id="email" value="email" required />
+      <br />
+
+      <span>از چه سرویس‌هایی استفاده کردید؟</span>
+      <!-- Add input for sauna here -->
+      <!-- <select name="" id=""></select> -->
+      <label for="sauna">سونا</label>
+      <!-- Add input for jacuzzi here -->
+      <input name="services" type="checkbox" id="sauna" value="sauna" />
+      <label for="jacuzzi">جکوزی</label>
+      <!-- Add input for pool here -->
+      <input name="services" type="checkbox" id="jacuzzi" value="jacuzzi" />
+      <label for="pool">استخر</label>
+      <input name="services" type="checkbox" id="pool" value="pool" />
+      <br /><br />
+
+      <span>آیا از کیفیت سرویس ارائه شده راضی بودید؟</span>
+      <!-- Add input for yes here -->
+      <input name="satisfaction" type="radio" id="yes" value="yes" />
+      <label for="yes">بله</label>
+      <input name="satisfaction" type="radio" id="no" value="no" />
+      <!-- Add input for no here -->
+      <label for="no">خیر</label><br /><br />
+
+      <label for="select"></label>
+      <select name="branch" id="select">
+        <option value="انتخاب شعبه" selected disabled>انتخاب شعبه</option>
+        <option value="1">شعبه یک</option>
+        <option value="2">شعبه دو</option>
+        <option value="3">شعبه سه</option>
+        <option value="4">شعبه چهار</option>
+      </select>
+
+      <br />
+      <label for="score">امتیاز</label><br />
+      <!-- Add input for score here -->
+      <input
+        type="number"
+        id="score"
+        value="score"
+        min="1"
+        max="5"
+        step="1"
+        required
+        name="score"
+      />
+      <br /><br />
+      <button type="submit">ثبت</button>
+      <!-- Add input for submit here -->
+    <!---- </form> ---->
+  </body>
+</html>
